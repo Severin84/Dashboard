@@ -46,7 +46,7 @@ app.use("/sales",salesRoutes)
 // const PORT=process.env.PORT || 9000
 const PORT =3001
 //console.log(process.env.DB_URI)
-mongoose.connect("mongodb://0.0.0.0:27017/TrialDashBoard").then(()=>{
+mongoose.connect("mongodb+srv://84severin:CiRbR2TUPQNxg0Kp@cluster0.kpt1sy9.mongodb.net/Dash").then(()=>{
     app.listen(PORT,()=>console.log(`server port :${PORT}`))
 
     //ONLY ADD DATA ONE TIME
@@ -54,6 +54,6 @@ mongoose.connect("mongodb://0.0.0.0:27017/TrialDashBoard").then(()=>{
    // User.insertMany(dataUser)
     //OverallStat.insertMany(dataOverallStat)
     // Product.insertMany(dataProduct);
-    // ProductStat.insertMany(dataProductStat)
+    //ProductStat.insertMany(dataProductStat)
    // Transaction.insertMany(dataTransaction)
 }).catch((error)=>console.log(`${error} did not connect`))
