@@ -46,7 +46,7 @@ app.use("/sales",salesRoutes)
 // const PORT=process.env.PORT || 9000
 const PORT =3001
 //console.log(process.env.DB_URI)
-mongoose.connect("mongodb://127.0.0.1:27017/TrialDashBoard").then(()=>{
+mongoose.connect("mongodb://0.0.0.0:27017/TrialDashBoard").then(()=>{
     app.listen(PORT,()=>console.log(`server port :${PORT}`))
 
     //ONLY ADD DATA ONE TIME
